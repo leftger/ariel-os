@@ -15,5 +15,7 @@ apps:
       - st-nucleo-f411re
       - st-nucleo-h755zi-q
       - st-nucleo-wb55
+      - st-nucleo-wba55
+      - st-nucleo-wba65ri
       - st-steval-mkboxpro
       - stm32u083c-dk

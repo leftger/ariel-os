@@ -21,4 +21,5 @@ apps:
       - stm32u083c-dk
       - st-nucleo-wb55
       - st-nucleo-wba55
+      - st-nucleo-wba65ri
       - st-steval-mkboxpro

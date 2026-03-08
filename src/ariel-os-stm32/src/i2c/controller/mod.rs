@@ -270,3 +270,15 @@ define_i2c_drivers!(
    // There is no I2C2
    I2C3_EV + I2C3_ER => I2C3,
 );
+#[cfg(context = "stm32wba55cg")]
+define_i2c_drivers!(
+   I2C1_EV + I2C1_ER => I2C1,
+   // There is no I2C2
+   I2C3_EV + I2C3_ER => I2C3,
+);
+#[cfg(context = "stm32wba65ri")]
+define_i2c_drivers!(
+   I2C1_EV + I2C1_ER => I2C1,
+   I2C2_EV + I2C2_ER => I2C2,
+   I2C3_EV + I2C3_ER => I2C3,
+);

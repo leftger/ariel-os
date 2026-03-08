@@ -154,6 +154,15 @@ ariel_os::hal::define_peripherals!(Peripherals {
     uart_tx: PB5,
 });
 
+// Side UART of Arduino v3 connector
+#[cfg(context = "st-nucleo-wba65ri")]
+pub type TestUart<'a> = uart::LPUART1<'a>;
+#[cfg(context = "st-nucleo-wba65ri")]
+ariel_os::hal::define_peripherals!(Peripherals {
+    uart_rx: PA10,
+    uart_tx: PA2,
+});
+
 // JTAG UART
 #[cfg(context = "st-steval-mkboxpro")]
 pub type TestUart<'a> = uart::UART4<'a>;

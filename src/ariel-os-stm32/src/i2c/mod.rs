@@ -36,6 +36,10 @@ pub fn init(peripherals: &mut crate::OptionalPeripherals) {
             take_all_i2c_peripherals!(I2C1, I2C2, I2C3, I2C4);
         } else if #[cfg(context = "stm32wb55rg")] {
             take_all_i2c_peripherals!(I2C1, I2C3);
+        } else if #[cfg(context = "stm32wba55cg")] {
+            take_all_i2c_peripherals!(I2C1, I2C3);
+        } else if #[cfg(context = "stm32wba65ri")] {
+            take_all_i2c_peripherals!(I2C1, I2C2, I2C3);
         } else {
             compile_error!("this STM32 chip is not supported");
         }

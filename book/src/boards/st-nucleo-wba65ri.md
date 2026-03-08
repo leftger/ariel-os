@@ -27,9 +27,9 @@ laze build -b st-nucleo-wba65ri
 |Debug Output|<span title="supported">✅</span>|
 |Logging|<span title="supported">✅</span>|
 |GPIO|<span title="supported">✅</span>|
-|I2C Controller Mode|<span title="available in hardware, but not currently supported by Ariel OS">❌</span>|
-|SPI Main Mode|<span title="available in hardware, but not currently supported by Ariel OS">❌</span>|
-|UART|<span title="available in hardware, but not currently supported by Ariel OS">❌</span>|
+|I2C Controller Mode|<span title="needs testing">🚦</span>|
+|SPI Main Mode|<span title="needs testing">🚦</span>|
+|UART|<span title="needs testing">🚦</span>|
 |User USB|<span title="needs testing">🚦</span>|
 |Ethernet over USB|<span title="needs testing">🚦</span>|
 |Wi-Fi|<span title="not available on this piece of hardware">–</span>|

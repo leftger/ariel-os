@@ -38,6 +38,8 @@ const MAX_FREQUENCY: Kilohertz = Kilohertz::MHz(32);
 const MAX_FREQUENCY: Kilohertz = Kilohertz::MHz(80);
 #[cfg(context = "stm32wb55rg")]
 const MAX_FREQUENCY: Kilohertz = Kilohertz::MHz(32);
+#[cfg(any(context = "stm32wba55cg", context = "stm32wba65ri"))]
+const MAX_FREQUENCY: Kilohertz = Kilohertz::MHz(32);
 
 /// SPI bus configuration.
 #[derive(Clone)]
@@ -214,4 +216,15 @@ define_spi_drivers!(
 define_spi_drivers!(
    SPI1 => SPI1,
    SPI2 => SPI2,
+);
+#[cfg(context = "stm32wba55cg")]
+define_spi_drivers!(
+   SPI1 => SPI1,
+   SPI3 => SPI3,
+);
+#[cfg(context = "stm32wba65ri")]
+define_spi_drivers!(
+   SPI1 => SPI1,
+   SPI2 => SPI2,
+   SPI3 => SPI3,
 );

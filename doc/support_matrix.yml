@@ -765,8 +765,8 @@ chips:
       gpio: supported
       debug_output: supported
       hwrng: supported
-      i2c_controller: not_currently_supported
-      spi_main: not_currently_supported
+      i2c_controller: needs_testing
+      spi_main: needs_testing
       uart: needs_testing
       logging: supported
       storage:
@@ -785,9 +785,9 @@ chips:
       gpio: supported
       debug_output: supported
       hwrng: supported
-      i2c_controller: not_currently_supported
-      spi_main: not_currently_supported
-      uart: not_currently_supported
+      i2c_controller: needs_testing
+      spi_main: needs_testing
+      uart: needs_testing
       logging: supported
       storage:
         status: supported_with_caveats

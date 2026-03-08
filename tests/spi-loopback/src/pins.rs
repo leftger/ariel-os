@@ -125,6 +125,16 @@ ariel_os::hal::define_peripherals!(Peripherals {
     spi_cs: PA4,
 });
 
+#[cfg(any(context = "stm32wba55cg", context = "stm32wba65ri"))]
+pub type SensorSpi = spi::main::SPI1;
+#[cfg(any(context = "st-nucleo-wba55", context = "st-nucleo-wba65ri"))]
+ariel_os::hal::define_peripherals!(Peripherals {
+    spi_sck: PB4,
+    spi_miso: PB3,
+    spi_mosi: PA15,
+    spi_cs: PA0,
+});
+
 // Side SPI of Arduino v3 connector
 #[cfg(any(context = "st-nucleo-f303re"))]
 pub type SensorSpi = spi::main::SPI1;
